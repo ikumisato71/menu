@@ -12,20 +12,20 @@
   position: relative;
   text-align: left;
   padding: 20px 30px 20px 20px;
-  border-radius: 8px 8px 0 0;
-  background: lightblue;
-  border: 1px solid lightblue;
-  color: black;
+  background: #fff;
+  border: none;
   cursor: pointer;
   width: 100%;
+  font-size: 18px;
+  border-bottom: solid 2px #7b7676;
 }
 
 .qa__body {
   position: relative;
   border-radius: 0 0 8px 8px;
   background: #fff;
+  border: none;
   color: black;
-  border: 1px solid lightblue;
   padding: 20px;
 }
 
@@ -45,35 +45,37 @@
 }
 
 .qa__body {
-  position: relative;
-  border-radius: 0 0 8px 8px;
-  background: #fff;
-  color: black;
+  max-height: 0;
+  overflow: hidden;
   /* borderを非表示 */
   border: transparent;
   /* 上下のpaddingを0に書き換える */
   padding: 0 20px;
   /* 非表示時、0 */
   line-height: 0;
-  /* 非表示時、０ */
-  opacity: 0;
   /* 追記 */
   transition: line-height 0.4s, padding 0.4s, opacity 0.4s;
 }
 
-.qa__body.is-open {
+.qa__head.is-open {
   padding: 20px;
   line-height: 1.5;
   opacity: 1;
   border: 1px solid lightblue;
+  visibility: visible;
 }
 
 .qa__head.is-open::after {
   transform: rotate(45deg) translateY(-10px);
+  visibility: visible;
 }
 .qa__item:not(:first-child) {
   margin-top: 16px;
 }
 .qa__body img {
   width: 30%;
+}
+
+.qa__item.is-open .qa__body {
+  max-height: 200px;
 }
