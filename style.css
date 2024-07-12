@@ -27,6 +27,7 @@
   background: #fff;
   border: none;
   color: black;
+
   max-height: 0;
   overflow: hidden;
   /* borderを非表示 */
@@ -55,13 +56,10 @@
 .qa__item.is-open {
   line-height: 1.5;
   opacity: 1;
-  border: none;
-  visibility: visible;
 }
 
-.qa__item.is-open::after {
+.qa__head.is-open::after {
   transform: rotate(45deg) translateY(-10px);
-  visibility: visible;
 }
 .qa__item:not(:first-child) {
   margin-top: 16px;
@@ -72,4 +70,5 @@
 
 .qa__item.is-open .qa__body {
   max-height: 50%;
+  padding: 20px;
 }
