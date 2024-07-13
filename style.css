@@ -72,3 +72,6 @@
   max-height: 50%;
   padding: 20px;
 }
+.qa__item a {
+  display: block;
+}
