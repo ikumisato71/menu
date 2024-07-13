@@ -39,7 +39,7 @@
   transition: line-height 0.4s, padding 0.4s, opacity 0.4s;
 }
 
-.qa__head::after {
+.qa__head::before {
   content: "";
   border-top: 1px solid black;
   border-left: 1px solid black;
