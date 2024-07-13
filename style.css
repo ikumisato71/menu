@@ -53,7 +53,7 @@
   transition: transform 0.4s;
 }
 
-.qa__head.is-open::after {
+.qa__head:checked::before {
   transform: rotate(-135deg) translateY(-10px);
 }
 
