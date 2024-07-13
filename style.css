@@ -11,6 +11,7 @@
 }
 
 .qa__head {
+  /* 必須: 擬似要素の位置を相対的に指定 */
   position: relative;
   text-align: left;
   padding: 20px 30px 20px 20px;
@@ -28,7 +29,6 @@
   background: #fff;
   border: none;
   color: black;
-
   max-height: 0;
   overflow: hidden;
   /* borderを非表示 */
@@ -46,12 +46,15 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  transform: rotate(-135deg) translateY(9px);
+  transform: rotate(45deg) translateY(-10px);
   position: absolute;
   right: 20px;
   top: 50%;
-  /* 追記  ふわっと*/
   transition: transform 0.4s;
+}
+
+.qa__head.is-open::after {
+  transform: rotate(-135deg) translateY(-10px);
 }
 
 .qa__item.is-open {
@@ -59,9 +62,6 @@
   opacity: 1;
 }
 
-.qa__head.is-open::after {
-  transform: rotate(45deg) translateY(-10px);
-}
 .qa__item:not(:first-child) {
   margin-top: 16px;
 }
