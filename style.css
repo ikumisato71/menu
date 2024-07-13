@@ -6,7 +6,8 @@
 }
 
 .qa__item {
-  display: inline-block;
+  /* display: inline-block; */
+  list-style-type: none;
 }
 
 .qa__head {
@@ -33,7 +34,7 @@
   /* borderを非表示 */
   border: transparent;
   /* 非表示時、0 */
-  line-height: 0;
+  line-height: 1;
   /* 追記 */
   transition: line-height 0.4s, padding 0.4s, opacity 0.4s;
 }
@@ -71,7 +72,4 @@
 .qa__item.is-open .qa__body {
   max-height: 50%;
   padding: 20px;
-}
-.qa__item a {
-  display: block;
 }
