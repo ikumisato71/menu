@@ -46,7 +46,7 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  transform: rotate(45deg) translateY(-10px);
+  transform: rotate(45deg); /* translateY(-10px); */
   position: absolute;
   right: 20px;
   top: 50%;
@@ -54,7 +54,7 @@
 }
 
 .qa__item.is-open .qa__head::before {
-  transform: rotate(-135deg) translateY(-10px);
+  transform: rotate(-135deg); /*translateY(10px); */
 }
 
 .qa__item.is-open {
