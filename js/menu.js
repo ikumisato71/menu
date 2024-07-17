@@ -1,4 +1,6 @@
 const qa = document.querySelectorAll(".js-ac");
+console.log(qa);
+
 qa.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("is-open");
