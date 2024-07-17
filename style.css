@@ -73,3 +73,7 @@
   max-height: 50%;
   padding: 20px;
 }
+.qa__link {
+  line-height: 1.5;
+  list-style: none;
+}
