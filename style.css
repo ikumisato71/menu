@@ -26,8 +26,12 @@
 
 .qa__body {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   background: #fff;
   border: none;
+  font-size: 18px;
   color: black;
   max-height: 0;
   overflow: hidden;
